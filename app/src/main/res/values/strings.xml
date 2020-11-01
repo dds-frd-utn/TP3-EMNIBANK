@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EmniBank</string>
+    <string name="banco">BANCO</string>
+    <string name="emni">EMNI</string>
+    <string name="ingrese_su_contrase_a_para_continuar">Ingrese su contraseña para continuar</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="ingrese_aqu_su_contrase_a">Ingrese aquí su contraseña</string>
+    <string name="MOVIMIENTO">Movimiento</string>
+</resources>
