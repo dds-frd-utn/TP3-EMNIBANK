@@ -44,15 +44,27 @@
         android:id="@+id/movText"
         android:layout_width="127dp"
         android:layout_height="24dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="92dp"
         android:fontFamily="sans-serif-light"
         android:text="@string/MOVIMIENTO"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/banco2"
-        tools:text="MOVIMIENTO" />
+        tools:text="MOVIMIENTOS" />
+
+    <TextView
+        android:id="@+id/textMov"
+        android:layout_width="331dp"
+        android:layout_height="384dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.853" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

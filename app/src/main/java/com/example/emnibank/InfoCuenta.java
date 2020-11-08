@@ -1,6 +1,8 @@
 package com.example.emnibank;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -13,6 +15,8 @@ import android.util.Log;
 import android.content.Context;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import static com.example.emnibank.R.id.textMov;
 
 
 public class InfoCuenta extends AppCompatActivity {
@@ -28,17 +32,14 @@ public class InfoCuenta extends AppCompatActivity {
         @Override
         protected String doInBackground(String... strings) {
             return RESTservice.makeGetRequest(
-                    "http://192.168.1.19:8080/EmniApp/rest/cuenta");
+                    "https://my-json-server.typicode.com/typicode/demo/db");
         }
 
         @Override
         protected void onPostExecute(String result) {
-            Toast notificacion = Toast.makeText(getApplicationContext(), "hola:"+result,
-                    Toast.LENGTH_SHORT);
-            notificacion.show();
-
-//            TextView comp = findViewById(R.id.movText);
-//            comp.setText(result);
+            TextView comp = findViewById(textMov);
+            comp.setText(result);
         }
     }
 }
+
